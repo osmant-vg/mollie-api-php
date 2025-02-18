@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\LazyCollection;
-use Mollie\Api\Resources\Settlement;
-use Mollie\Api\Resources\SettlementCollection;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\Settlement;
+use Mollie2\Api\Resources\SettlementCollection;
 
 class SettlementsEndpoint extends CollectionEndpointAbstract
 {
@@ -14,7 +14,7 @@ class SettlementsEndpoint extends CollectionEndpointAbstract
     /**
      * Get the object that is used by this API. Every API uses one type of object.
      *
-     * @return \Mollie\Api\Resources\BaseResource
+     * @return \Mollie2\Api\Resources\BaseResource
      */
     protected function getResourceObject()
     {
@@ -27,7 +27,7 @@ class SettlementsEndpoint extends CollectionEndpointAbstract
      * @param int $count
      * @param \stdClass $_links
      *
-     * @return \Mollie\Api\Resources\BaseCollection
+     * @return \Mollie2\Api\Resources\BaseCollection
      */
     protected function getResourceCollectionObject($count, $_links)
     {

@@ -43,7 +43,7 @@ try {
         ],
 
         // Flag this payment as a recurring payment.
-        "sequenceType" => \Mollie\Api\Types\SequenceType::SEQUENCETYPE_RECURRING,
+        "sequenceType" => \Mollie2\Api\Types\SequenceType::SEQUENCETYPE_RECURRING,
     ]);
     
     /*
@@ -57,6 +57,6 @@ try {
      */
     echo "<p>Selected mandate is '" . htmlspecialchars($payment->mandateId) . "' (" . htmlspecialchars($payment->method) . ").</p>\n";
     echo "<p>The payment status is '" . htmlspecialchars($payment->status) . "'.</p>\n";
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "API call failed: " . htmlspecialchars($e->getMessage());
 }

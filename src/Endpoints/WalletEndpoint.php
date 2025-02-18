@@ -1,8 +1,8 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Resources\BaseResource;
+use Mollie2\Api\Resources\BaseResource;
 
 class WalletEndpoint extends EndpointAbstract
 {
@@ -24,7 +24,7 @@ class WalletEndpoint extends EndpointAbstract
      * @param array $parameters
      *
      * @return false|string
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function requestApplePayPaymentSession($domain, $validationUrl, $parameters = [])
     {

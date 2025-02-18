@@ -1,9 +1,9 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\ClientLink;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\ClientLink;
 
 class ClientLinkEndpoint extends EndpointAbstract
 {

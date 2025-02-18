@@ -22,6 +22,6 @@ try {
     foreach ($shipment->lines as $line) {
         echo $line->name . ' - status: <b>' . $line->status . '</b>.';
     }
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "API call failed: " . htmlspecialchars($e->getMessage());
 }

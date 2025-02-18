@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
 class Shipment extends BaseResource
 {
@@ -98,7 +98,7 @@ class Shipment extends BaseResource
      * Get the Order object for this shipment
      *
      * @return Order
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function order()
     {
@@ -109,7 +109,7 @@ class Shipment extends BaseResource
      * Save changes made to this shipment.
      *
      * @return BaseResource|Shipment
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function update()
     {

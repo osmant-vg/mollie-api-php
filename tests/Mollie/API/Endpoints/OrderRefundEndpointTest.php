@@ -1,14 +1,14 @@
 <?php
 
-namespace Tests\Mollie\Api\Endpoints;
+namespace Tests\Mollie2\Api\Endpoints;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use Mollie\Api\Resources\Order;
-use Mollie\Api\Resources\Refund;
-use Mollie\Api\Resources\RefundCollection;
-use Mollie\Api\Types\OrderStatus;
-use Mollie\Api\Types\RefundStatus;
+use Mollie2\Api\Resources\Order;
+use Mollie2\Api\Resources\Refund;
+use Mollie2\Api\Resources\RefundCollection;
+use Mollie2\Api\Types\OrderStatus;
+use Mollie2\Api\Types\RefundStatus;
 use Tests\Mollie\TestHelpers\AmountObjectTestHelpers;
 use Tests\Mollie\TestHelpers\LinkObjectTestHelpers;
 

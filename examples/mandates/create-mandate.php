@@ -19,12 +19,12 @@ try {
      * Create a SEPA Direct Debit mandate for the customer
      */
     $mandate = $customer->createMandate([
-        "method" => \Mollie\Api\Types\MandateMethod::DIRECTDEBIT,
+        "method" => \Mollie2\Api\Types\MandateMethod::DIRECTDEBIT,
         "consumerAccount" => 'NL34ABNA0243341423',
         "consumerName" => 'B. A. Example',
     ]);
 
     echo "<p>Mandate created with id " . $mandate->id . " for customer " . $customer->name . "</p>";
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "API call failed: " . htmlspecialchars($e->getMessage());
 }

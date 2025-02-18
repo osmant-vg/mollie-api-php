@@ -1,10 +1,10 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Resources\Payment;
-use Mollie\Api\Resources\Route;
-use Mollie\Api\Resources\RouteCollection;
+use Mollie2\Api\Resources\Payment;
+use Mollie2\Api\Resources\Route;
+use Mollie2\Api\Resources\RouteCollection;
 
 class PaymentRouteEndpoint extends CollectionEndpointAbstract
 {
@@ -13,7 +13,7 @@ class PaymentRouteEndpoint extends CollectionEndpointAbstract
     /**
      * Get the object that is used by this API endpoint. Every API endpoint uses one type of object.
      *
-     * @return \Mollie\Api\Resources\Route
+     * @return \Mollie2\Api\Resources\Route
      */
     protected function getResourceObject()
     {
@@ -26,7 +26,7 @@ class PaymentRouteEndpoint extends CollectionEndpointAbstract
      * @param int $count
      * @param \stdClass $_links
      *
-     * @return \Mollie\Api\Resources\RouteCollection
+     * @return \Mollie2\Api\Resources\RouteCollection
      */
     protected function getResourceCollectionObject($count, $_links)
     {
@@ -40,7 +40,7 @@ class PaymentRouteEndpoint extends CollectionEndpointAbstract
      * the balance of the connected account
      *
      * @return Route
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function updateReleaseDateFor(Payment $payment, $routeId, $releaseDate)
     {
@@ -53,8 +53,8 @@ class PaymentRouteEndpoint extends CollectionEndpointAbstract
      * @param string $releaseDate - UTC datetime in ISO-8601 format when the funds for the following payment will become available on
      * the balance of the connected account
      *
-     * @return \Mollie\Api\Resources\Route
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\Route
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function updateReleaseDateForPaymentId($paymentId, $routeId, $releaseDate, $testmode = false)
     {

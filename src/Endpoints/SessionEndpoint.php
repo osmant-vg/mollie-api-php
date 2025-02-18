@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\LazyCollection;
-use Mollie\Api\Resources\Session;
-use Mollie\Api\Resources\SessionCollection;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\Session;
+use Mollie2\Api\Resources\SessionCollection;
 
 class SessionEndpoint extends CollectionEndpointAbstract
 {

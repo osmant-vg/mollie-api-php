@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\LazyCollection;
-use Mollie\Api\Resources\PaymentLink;
-use Mollie\Api\Resources\PaymentLinkCollection;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\PaymentLink;
+use Mollie2\Api\Resources\PaymentLinkCollection;
 
 class PaymentLinkEndpoint extends CollectionEndpointAbstract
 {
@@ -22,7 +22,7 @@ class PaymentLinkEndpoint extends CollectionEndpointAbstract
      * @param string $paymentLinkId
      * @param array $data
      * @return PaymentLink
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function update(string $paymentLinkId, array $data)
     {
@@ -39,7 +39,7 @@ class PaymentLinkEndpoint extends CollectionEndpointAbstract
      * @param string $paymentLinkId
      * @param array $data
      * @return void
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function delete(string $paymentLinkId, array $data = [])
     {

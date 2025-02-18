@@ -45,7 +45,7 @@ Include the ``vendor/autoload.php`` as shown in [Initialize example](https://git
 Initializing the Mollie API client, and setting your API key.
 
 ```php
-$mollie = new \Mollie\Api\MollieApiClient();
+$mollie = new \Mollie2\Api\MollieApiClient();
 $mollie->setApiKey("test_dHar4XY7LxsDOtmnkVtjNVWXLSlXsM");
 ```
 
@@ -295,7 +295,7 @@ To fully integrate iDEAL payments on your website, follow these additional steps
 1. Retrieve the list of issuers (banks) that support iDEAL.
 
 ```php
-$method = $mollie->methods->get(\Mollie\Api\Types\PaymentMethod::IDEAL, ["include" => "issuers"]);
+$method = $mollie->methods->get(\Mollie2\Api\Types\PaymentMethod::IDEAL, ["include" => "issuers"]);
 ```
 
 Use the `$method->issuers` list to let the customer pick their preferred issuer.
@@ -314,7 +314,7 @@ $payment = $mollie->payments->create([
     "description" => "My first API payment",
     "redirectUrl" => "https://webshop.example.org/order/12345/",
     "webhookUrl"  => "https://webshop.example.org/mollie-webhook/",
-    "method"      => \Mollie\Api\Types\PaymentMethod::IDEAL,
+    "method"      => \Mollie2\Api\Types\PaymentMethod::IDEAL,
     "issuer"      => $selectedIssuerId, // e.g. "ideal_INGBNL2A"
 ]);
 ```
@@ -375,12 +375,12 @@ When troubleshooting, it can be highly beneficial to have access to the submitte
 To enable debugging and inspect the request:
 
 ```php
-/** @var $mollie \Mollie\Api\MollieApiClient */
+/** @var $mollie \Mollie2\Api\MollieApiClient */
 $mollie->enableDebugging();
 
 try {
     $mollie->payments->get('tr_12345678');
-} catch (\Mollie\Api\Exceptions\ApiException $exception) {
+} catch (\Mollie2\Api\Exceptions\ApiException $exception) {
     $request = $exception->getRequest();
 }
 ```
@@ -390,7 +390,7 @@ If you are recording instances of `ApiException`, the request details will be in
 To disable debugging again:
 
 ```php
-/** @var $mollie \Mollie\Api\MollieApiClient */
+/** @var $mollie \Mollie2\Api\MollieApiClient */
 $mollie->disableDebugging();
 ```
 

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Tests\Mollie\Api\Endpoints;
+namespace Tests\Mollie2\Api\Endpoints;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use Mollie\Api\Resources\Balance;
-use Mollie\Api\Resources\BalanceCollection;
-use Mollie\Api\Types\BalanceTransferFrequency;
+use Mollie2\Api\Resources\Balance;
+use Mollie2\Api\Resources\BalanceCollection;
+use Mollie2\Api\Types\BalanceTransferFrequency;
 use Tests\Mollie\TestHelpers\AmountObjectTestHelpers;
 use Tests\Mollie\TestHelpers\LinkObjectTestHelpers;
 
@@ -447,7 +447,7 @@ class BalanceEndpointTest extends BaseEndpointTest
     }
 
     /**
-     * @param \Mollie\Api\Resources\Balance $balance
+     * @param \Mollie2\Api\Resources\Balance $balance
      * @param string $balanceId
      * @param string $createdAt
      * @param string $transferFrequency

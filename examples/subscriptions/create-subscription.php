@@ -56,6 +56,6 @@ try {
     echo "<p>";
     echo '<a href="' . $protocol . '://' . $hostname . $path . '/17-cancel-subscription.php?subscription_id=' . $subscription->id . '">18-cancel-subscription</a><br>';
     echo "</p>";
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "API call failed: " . htmlspecialchars($e->getMessage());
 }

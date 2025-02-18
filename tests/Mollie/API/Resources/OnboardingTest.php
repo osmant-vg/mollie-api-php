@@ -2,9 +2,9 @@
 
 namespace Tests\Mollie\API\Resources;
 
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Resources\Onboarding;
-use Mollie\Api\Types\OnboardingStatus;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Resources\Onboarding;
+use Mollie2\Api\Types\OnboardingStatus;
 
 class OnboardingTest extends \PHPUnit\Framework\TestCase
 {

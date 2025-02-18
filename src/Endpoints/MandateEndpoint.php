@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Resources\Customer;
-use Mollie\Api\Resources\LazyCollection;
-use Mollie\Api\Resources\Mandate;
-use Mollie\Api\Resources\MandateCollection;
+use Mollie2\Api\Resources\Customer;
+use Mollie2\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\Mandate;
+use Mollie2\Api\Resources\MandateCollection;
 
 class MandateEndpoint extends CollectionEndpointAbstract
 {
@@ -39,8 +39,8 @@ class MandateEndpoint extends CollectionEndpointAbstract
      * @param array $options
      * @param array $filters
      *
-     * @return \Mollie\Api\Resources\Mandate
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\Mandate
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function createFor(Customer $customer, array $options = [], array $filters = [])
     {
@@ -52,8 +52,8 @@ class MandateEndpoint extends CollectionEndpointAbstract
      * @param array $options
      * @param array $filters
      *
-     * @return \Mollie\Api\Resources\Mandate
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\Mandate
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function createForId($customerId, array $options = [], array $filters = [])
     {
@@ -67,8 +67,8 @@ class MandateEndpoint extends CollectionEndpointAbstract
      * @param string $mandateId
      * @param array $parameters
      *
-     * @return \Mollie\Api\Resources\Mandate
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\Mandate
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function getFor(Customer $customer, $mandateId, array $parameters = [])
     {
@@ -80,8 +80,8 @@ class MandateEndpoint extends CollectionEndpointAbstract
      * @param string $mandateId
      * @param array $parameters
      *
-     * @return \Mollie\Api\Resources\Mandate
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\Mandate
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function getForId($customerId, $mandateId, array $parameters = [])
     {
@@ -96,8 +96,8 @@ class MandateEndpoint extends CollectionEndpointAbstract
      * @param int $limit
      * @param array $parameters
      *
-     * @return \Mollie\Api\Resources\MandateCollection
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\MandateCollection
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function listFor(Customer $customer, $from = null, $limit = null, array $parameters = [])
     {
@@ -126,8 +126,8 @@ class MandateEndpoint extends CollectionEndpointAbstract
      * @param int|null $limit
      * @param array $parameters
      *
-     * @return \Mollie\Api\Resources\MandateCollection
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\MandateCollection
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function listForId($customerId, $from = null, $limit = null, array $parameters = [])
     {
@@ -160,7 +160,7 @@ class MandateEndpoint extends CollectionEndpointAbstract
      * @param array $data
      *
      * @return null
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function revokeFor(Customer $customer, $mandateId, $data = [])
     {
@@ -173,7 +173,7 @@ class MandateEndpoint extends CollectionEndpointAbstract
      * @param array $data
      *
      * @return null
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function revokeForId($customerId, $mandateId, $data = [])
     {

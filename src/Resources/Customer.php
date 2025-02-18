@@ -1,8 +1,8 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
-use Mollie\Api\Exceptions\ApiException;
+use Mollie2\Api\Exceptions\ApiException;
 
 class Customer extends BaseResource
 {
@@ -58,8 +58,8 @@ class Customer extends BaseResource
     public $_links;
 
     /**
-     * @return \Mollie\Api\Resources\Customer
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\Customer
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function update()
     {
@@ -125,7 +125,7 @@ class Customer extends BaseResource
     /**
      * @param string $subscriptionId
      *
-     * @return \Mollie\Api\Resources\Subscription
+     * @return \Mollie2\Api\Resources\Subscription
      * @throws ApiException
      */
     public function cancelSubscription($subscriptionId)

@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Resources\Customer;
-use Mollie\Api\Resources\LazyCollection;
-use Mollie\Api\Resources\Payment;
-use Mollie\Api\Resources\PaymentCollection;
+use Mollie2\Api\Resources\Customer;
+use Mollie2\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\Payment;
+use Mollie2\Api\Resources\PaymentCollection;
 
 class CustomerPaymentsEndpoint extends CollectionEndpointAbstract
 {
@@ -42,7 +42,7 @@ class CustomerPaymentsEndpoint extends CollectionEndpointAbstract
      * @param array $filters
      *
      * @return Payment
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function createFor(Customer $customer, array $options = [], array $filters = [])
     {
@@ -56,8 +56,8 @@ class CustomerPaymentsEndpoint extends CollectionEndpointAbstract
      * @param array $options
      * @param array $filters
      *
-     * @return \Mollie\Api\Resources\Payment
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\Payment
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function createForId($customerId, array $options = [], array $filters = [])
     {
@@ -73,7 +73,7 @@ class CustomerPaymentsEndpoint extends CollectionEndpointAbstract
      * @param array $parameters
      *
      * @return PaymentCollection
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function listFor(Customer $customer, ?string $from = null, ?int $limit = null, array $parameters = [])
     {
@@ -102,8 +102,8 @@ class CustomerPaymentsEndpoint extends CollectionEndpointAbstract
      * @param int $limit
      * @param array $parameters
      *
-     * @return \Mollie\Api\Resources\PaymentCollection
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\PaymentCollection
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function listForId($customerId, ?string $from = null, ?int $limit = null, array $parameters = [])
     {

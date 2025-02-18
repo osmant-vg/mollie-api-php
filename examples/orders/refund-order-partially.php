@@ -28,6 +28,6 @@ try {
 
     echo 'Refund ' . $refund->id . ' was created for part of your order ' . $order->id;
     echo 'You will receive ' . $refund->amount->currency . $refund->amount->value;
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "API call failed: " . htmlspecialchars($e->getMessage());
 }

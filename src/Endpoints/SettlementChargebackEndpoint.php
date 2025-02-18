@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Resources\Chargeback;
-use Mollie\Api\Resources\ChargebackCollection;
-use Mollie\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\Chargeback;
+use Mollie2\Api\Resources\ChargebackCollection;
+use Mollie2\Api\Resources\LazyCollection;
 
 class SettlementChargebackEndpoint extends CollectionEndpointAbstract
 {
@@ -37,7 +37,7 @@ class SettlementChargebackEndpoint extends CollectionEndpointAbstract
      * @param array $parameters
      *
      * @return mixed
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function pageForId(string $settlementId, ?string $from = null, ?int $limit = null, array $parameters = [])
     {

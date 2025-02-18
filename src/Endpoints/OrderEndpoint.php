@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\LazyCollection;
-use Mollie\Api\Resources\Order;
-use Mollie\Api\Resources\OrderCollection;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\Order;
+use Mollie2\Api\Resources\OrderCollection;
 
 class OrderEndpoint extends CollectionEndpointAbstract
 {
@@ -107,7 +107,7 @@ class OrderEndpoint extends CollectionEndpointAbstract
      *
      * @param array $parameters
      * @return Order
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function cancel($orderId, $parameters = [])
     {

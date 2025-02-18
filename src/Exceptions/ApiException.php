@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollie\Api\Exceptions;
+namespace Mollie2\Api\Exceptions;
 
 use DateTime;
 
@@ -45,7 +45,7 @@ class ApiException extends \Exception
      * @param \Psr\Http\Message\RequestInterface|null $request
      * @param \Psr\Http\Message\ResponseInterface|null $response
      * @param \Throwable|null $previous
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function __construct(
         $message = "",
@@ -99,8 +99,8 @@ class ApiException extends \Exception
      * @param \Psr\Http\Message\ResponseInterface $response
      * @param \Psr\Http\Message\RequestInterface $request
      * @param \Throwable|null $previous
-     * @return \Mollie\Api\Exceptions\ApiException
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public static function createFromResponse($response, $request = null, $previous = null)
     {
@@ -217,7 +217,7 @@ class ApiException extends \Exception
     /**
      * @param \Psr\Http\Message\ResponseInterface $response
      * @return \stdClass
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     protected static function parseResponseBody($response)
     {

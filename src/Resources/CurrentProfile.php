@@ -1,8 +1,8 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
-use Mollie\Api\Exceptions\ApiException;
+use Mollie2\Api\Exceptions\ApiException;
 
 class CurrentProfile extends Profile
 {

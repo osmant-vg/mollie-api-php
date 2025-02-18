@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mollie\Api\Idempotency;
+namespace Mollie2\Api\Idempotency;
 
 class FakeIdempotencyKeyGenerator implements IdempotencyKeyGeneratorContract
 {

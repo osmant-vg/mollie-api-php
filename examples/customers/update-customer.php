@@ -26,6 +26,6 @@ try {
     $customer->update();
 
     echo "<p>Customer updated: " . htmlspecialchars($customer->name) . "</p>";
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "API call failed: " . htmlspecialchars($e->getMessage());
 }

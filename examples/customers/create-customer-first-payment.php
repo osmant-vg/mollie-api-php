@@ -45,7 +45,7 @@ try {
         ],
 
         // Flag this payment as a first payment to allow recurring payments later.
-        "sequenceType" => \Mollie\Api\Types\SequenceType::SEQUENCETYPE_FIRST,
+        "sequenceType" => \Mollie2\Api\Types\SequenceType::SEQUENCETYPE_FIRST,
     ]);
 
     /*
@@ -61,6 +61,6 @@ try {
      * used for recurring payments and subscriptions.
      */
     header("Location: " . $payment->getCheckoutUrl(), true, 303);
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "API call failed: " . htmlspecialchars($e->getMessage());
 }

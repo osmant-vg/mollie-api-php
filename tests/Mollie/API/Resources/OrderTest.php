@@ -1,14 +1,14 @@
 <?php
 
-namespace Tests\Mollie\Api\Resources;
+namespace Tests\Mollie2\Api\Resources;
 
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Resources\Order;
-use Mollie\Api\Resources\OrderLine;
-use Mollie\Api\Resources\OrderLineCollection;
-use Mollie\Api\Types\OrderLineStatus;
-use Mollie\Api\Types\OrderLineType;
-use Mollie\Api\Types\OrderStatus;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Resources\Order;
+use Mollie2\Api\Resources\OrderLine;
+use Mollie2\Api\Resources\OrderLineCollection;
+use Mollie2\Api\Types\OrderLineStatus;
+use Mollie2\Api\Types\OrderLineType;
+use Mollie2\Api\Types\OrderStatus;
 use stdClass;
 use Tests\Mollie\TestHelpers\AmountObjectTestHelpers;
 use Tests\Mollie\TestHelpers\LinkObjectTestHelpers;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Resources\LazyCollection;
-use Mollie\Api\Resources\Payment;
-use Mollie\Api\Resources\PaymentCollection;
+use Mollie2\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\Payment;
+use Mollie2\Api\Resources\PaymentCollection;
 
 class SettlementPaymentEndpoint extends CollectionEndpointAbstract
 {
@@ -35,7 +35,7 @@ class SettlementPaymentEndpoint extends CollectionEndpointAbstract
      * @param array $parameters
      *
      * @return mixed
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function pageForId($settlementId, $from = null, $limit = null, array $parameters = [])
     {

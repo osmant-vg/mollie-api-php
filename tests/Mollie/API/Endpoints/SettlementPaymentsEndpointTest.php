@@ -1,12 +1,12 @@
 <?php
 
-namespace Tests\Mollie\Api\Endpoints;
+namespace Tests\Mollie2\Api\Endpoints;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use Mollie\Api\Resources\Payment;
-use Mollie\Api\Resources\PaymentCollection;
-use Mollie\Api\Resources\Settlement;
+use Mollie2\Api\Resources\Payment;
+use Mollie2\Api\Resources\PaymentCollection;
+use Mollie2\Api\Resources\Settlement;
 
 class SettlementPaymentsEndpointTest extends BaseEndpointTest
 {

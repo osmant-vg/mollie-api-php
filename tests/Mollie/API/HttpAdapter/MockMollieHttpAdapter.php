@@ -2,7 +2,7 @@
 
 namespace Tests\Mollie\API\HttpAdapter;
 
-class MockMollieHttpAdapter implements \Mollie\Api\HttpAdapter\MollieHttpAdapterInterface
+class MockMollieHttpAdapter implements \Mollie2\Api\HttpAdapter\MollieHttpAdapterInterface
 {
     /**
      * @inheritDoc

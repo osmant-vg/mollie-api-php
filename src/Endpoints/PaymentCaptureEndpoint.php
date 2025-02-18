@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Resources\Capture;
-use Mollie\Api\Resources\CaptureCollection;
-use Mollie\Api\Resources\LazyCollection;
-use Mollie\Api\Resources\Payment;
+use Mollie2\Api\Resources\Capture;
+use Mollie2\Api\Resources\CaptureCollection;
+use Mollie2\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\Payment;
 
 class PaymentCaptureEndpoint extends CollectionEndpointAbstract
 {
@@ -27,7 +27,7 @@ class PaymentCaptureEndpoint extends CollectionEndpointAbstract
      * @param int $count
      * @param \stdClass $_links
      *
-     * @return \Mollie\Api\Resources\CaptureCollection
+     * @return \Mollie2\Api\Resources\CaptureCollection
      */
     protected function getResourceCollectionObject($count, $_links)
     {
@@ -42,7 +42,7 @@ class PaymentCaptureEndpoint extends CollectionEndpointAbstract
      * @param array $filters
      *
      * @return Capture
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function createFor(Payment $payment, array $data = [], array $filters = [])
     {
@@ -57,7 +57,7 @@ class PaymentCaptureEndpoint extends CollectionEndpointAbstract
      * @param array $filters
      *
      * @return Capture
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function createForId($paymentId, array $data = [], array $filters = [])
     {
@@ -72,7 +72,7 @@ class PaymentCaptureEndpoint extends CollectionEndpointAbstract
      * @param array $parameters
      *
      * @return Capture
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function getFor(Payment $payment, $captureId, array $parameters = [])
     {
@@ -84,8 +84,8 @@ class PaymentCaptureEndpoint extends CollectionEndpointAbstract
      * @param string $captureId
      * @param array $parameters
      *
-     * @return \Mollie\Api\Resources\Capture
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\Capture
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function getForId($paymentId, $captureId, array $parameters = [])
     {
@@ -99,7 +99,7 @@ class PaymentCaptureEndpoint extends CollectionEndpointAbstract
      * @param array $parameters
      *
      * @return Capture
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function listFor(Payment $payment, array $parameters = [])
     {
@@ -126,8 +126,8 @@ class PaymentCaptureEndpoint extends CollectionEndpointAbstract
      * @param string $paymentId
      * @param array $parameters
      *
-     * @return \Mollie\Api\Resources\BaseCollection|\Mollie\Api\Resources\Capture
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\BaseCollection|\Mollie2\Api\Resources\Capture
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function listForId($paymentId, array $parameters = [])
     {

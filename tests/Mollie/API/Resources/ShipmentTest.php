@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests\Mollie\Api\Resources;
+namespace Tests\Mollie2\Api\Resources;
 
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Resources\Shipment;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Resources\Shipment;
 use PHPUnit\Framework\TestCase;
 
 class ShipmentTest extends TestCase

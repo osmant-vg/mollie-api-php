@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Resources\Balance;
-use Mollie\Api\Resources\BalanceReport;
-use Mollie\Api\Resources\ResourceFactory;
+use Mollie2\Api\Resources\Balance;
+use Mollie2\Api\Resources\BalanceReport;
+use Mollie2\Api\Resources\ResourceFactory;
 
 class BalanceReportEndpoint extends EndpointAbstract
 {
@@ -25,8 +25,8 @@ class BalanceReportEndpoint extends EndpointAbstract
      *
      * @param string $balanceId
      * @param array $parameters
-     * @return \Mollie\Api\Resources\BalanceReport|\Mollie\Api\Resources\BaseResource
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\BalanceReport|\Mollie2\Api\Resources\BaseResource
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function getForId(string $balanceId, array $parameters = [])
     {
@@ -45,8 +45,8 @@ class BalanceReportEndpoint extends EndpointAbstract
      * This is the balance of your account’s primary currency, where all payments are settled to by default.
      *
      * @param array $parameters
-     * @return \Mollie\Api\Resources\BalanceReport|\Mollie\Api\Resources\BaseResource
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\BalanceReport|\Mollie2\Api\Resources\BaseResource
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function getForPrimary(array $parameters = [])
     {
@@ -57,10 +57,10 @@ class BalanceReportEndpoint extends EndpointAbstract
     /**
      * Retrieve a balance report for the provided balance resource and parameters.
      *
-     * @param \Mollie\Api\Resources\Balance $balance
+     * @param \Mollie2\Api\Resources\Balance $balance
      * @param array $parameters
-     * @return \Mollie\Api\Resources\BalanceReport|\Mollie\Api\Resources\BaseResource
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\BalanceReport|\Mollie2\Api\Resources\BaseResource
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function getFor(Balance $balance, array $parameters = [])
     {

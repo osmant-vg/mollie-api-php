@@ -15,6 +15,6 @@ try {
      */
     $profile = $mollie->profiles->delete("pfl_v9hTwCvYqw");
     echo "<p>Profile deleted</p>";
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "<p>API call failed: " . htmlspecialchars($e->getMessage()) . "</p>";
 }

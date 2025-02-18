@@ -2,7 +2,7 @@
 
 namespace Tests\Mollie\API\HttpAdapter;
 
-use Mollie\Api\HttpAdapter\CurlMollieHttpAdapter;
+use Mollie2\Api\HttpAdapter\CurlMollieHttpAdapter;
 use PHPUnit\Framework\TestCase;
 
 class CurlMollieHttpAdapterTest extends TestCase

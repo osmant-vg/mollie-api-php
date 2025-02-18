@@ -1,10 +1,10 @@
 <?php
 
-namespace Tests\Mollie\Api\Resources;
+namespace Tests\Mollie2\Api\Resources;
 
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Resources\IssuerCollection;
-use Mollie\Api\Resources\Method;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Resources\IssuerCollection;
+use Mollie2\Api\Resources\Method;
 use PHPUnit\Framework\TestCase;
 
 class MethodTest extends TestCase

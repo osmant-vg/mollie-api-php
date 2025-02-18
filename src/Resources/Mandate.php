@@ -1,9 +1,9 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Types\MandateStatus;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Types\MandateStatus;
 
 class Mandate extends BaseResource
 {
@@ -86,7 +86,7 @@ class Mandate extends BaseResource
     /**
      * Revoke the mandate
      *
-     * @return null|\stdClass|\Mollie\Api\Resources\Mandate
+     * @return null|\stdClass|\Mollie2\Api\Resources\Mandate
      */
     public function revoke()
     {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\LazyCollection;
-use Mollie\Api\Resources\Terminal;
-use Mollie\Api\Resources\TerminalCollection;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\Terminal;
+use Mollie2\Api\Resources\TerminalCollection;
 
 class TerminalEndpoint extends CollectionEndpointAbstract
 {

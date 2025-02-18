@@ -1,8 +1,8 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
-use Mollie\Api\MollieApiClient;
+use Mollie2\Api\MollieApiClient;
 
 #[\AllowDynamicProperties]
 class ResourceFactory

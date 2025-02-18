@@ -1,10 +1,10 @@
 <?php
 
-namespace Tests\Mollie\Api\Resources;
+namespace Tests\Mollie2\Api\Resources;
 
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Resources\OrderLine;
-use Mollie\Api\Resources\OrderLineCollection;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Resources\OrderLine;
+use Mollie2\Api\Resources\OrderLineCollection;
 
 class OrderLineCollectionTest extends \PHPUnit\Framework\TestCase
 {

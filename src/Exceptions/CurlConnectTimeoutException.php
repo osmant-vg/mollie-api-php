@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollie\Api\Exceptions;
+namespace Mollie2\Api\Exceptions;
 
 class CurlConnectTimeoutException extends ApiException
 {

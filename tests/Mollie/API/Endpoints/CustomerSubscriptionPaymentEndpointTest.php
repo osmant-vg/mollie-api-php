@@ -1,11 +1,11 @@
 <?php
 
-namespace Tests\Mollie\Api\Endpoints;
+namespace Tests\Mollie2\Api\Endpoints;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use Mollie\Api\Resources\PaymentCollection;
-use Mollie\Api\Resources\Subscription;
+use Mollie2\Api\Resources\PaymentCollection;
+use Mollie2\Api\Resources\Subscription;
 use Tests\Mollie\TestHelpers\LinkObjectTestHelpers;
 
 class CustomerSubscriptionPaymentEndpointTest extends BaseEndpointTest

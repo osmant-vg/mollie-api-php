@@ -1,9 +1,9 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
-use Mollie\Api\Types\OrderLineStatus;
-use Mollie\Api\Types\OrderLineType;
+use Mollie2\Api\Types\OrderLineStatus;
+use Mollie2\Api\Types\OrderLineType;
 
 class OrderLine extends BaseResource
 {
@@ -382,7 +382,7 @@ class OrderLine extends BaseResource
      * Update an orderline by supplying one or more parameters in the data array
      *
      * @return BaseResource
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function update()
     {

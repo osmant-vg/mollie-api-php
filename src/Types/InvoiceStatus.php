@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollie\Api\Types;
+namespace Mollie2\Api\Types;
 
 class InvoiceStatus
 {

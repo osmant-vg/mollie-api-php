@@ -1,11 +1,11 @@
 <?php
 
-namespace Tests\Mollie\Api\Endpoints;
+namespace Tests\Mollie2\Api\Endpoints;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use Mollie\Api\Resources\Refund;
-use Mollie\Api\Resources\RefundCollection;
+use Mollie2\Api\Resources\Refund;
+use Mollie2\Api\Resources\RefundCollection;
 
 class RefundEndpointTest extends BaseEndpointTest
 {

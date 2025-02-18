@@ -18,9 +18,9 @@ try {
      */
 
     $addOrderLine = [
-        "operation" => \Mollie\Api\Types\OrderLineUpdateOperationType::ADD,
+        "operation" => \Mollie2\Api\Types\OrderLineUpdateOperationType::ADD,
         "data" => [
-            "type" => \Mollie\Api\Types\OrderLineType::TYPE_DIGITAL,
+            "type" => \Mollie2\Api\Types\OrderLineType::TYPE_DIGITAL,
             "name" => "Adding new orderline",
             "quantity" => 2,
             "sku" => "12345679",
@@ -40,14 +40,14 @@ try {
         ],
     ];
     $updateOrderLine = [
-        "operation" => \Mollie\Api\Types\OrderLineUpdateOperationType::UPDATE,
+        "operation" => \Mollie2\Api\Types\OrderLineUpdateOperationType::UPDATE,
         "data" => [
             "id" => "odl_1.1l9vx0",
             "name" => "New order line name",
         ],
     ];
     $cancelOrderLine = [
-        "operation" => \Mollie\Api\Types\OrderLineUpdateOperationType::CANCEL,
+        "operation" => \Mollie2\Api\Types\OrderLineUpdateOperationType::CANCEL,
         "data" => [
             "id" => "odl_1.4hqjw6",
         ],
@@ -61,7 +61,7 @@ try {
 
     $order = $mollie->orderLines->updateMultiple('ord_pbjz8x', $operations);
 
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     /*
      * When updating order lines for orders that used a pay after delivery method such as Klarna Pay Later, the
      * supplier (Klarna) may decline the requested changes. This results in an error response from the Mollie API.

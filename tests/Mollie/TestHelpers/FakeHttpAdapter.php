@@ -2,7 +2,7 @@
 
 namespace Tests\Mollie\TestHelpers;
 
-use Mollie\Api\HttpAdapter\MollieHttpAdapterInterface;
+use Mollie2\Api\HttpAdapter\MollieHttpAdapterInterface;
 
 class FakeHttpAdapter implements MollieHttpAdapterInterface
 {

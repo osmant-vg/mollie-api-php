@@ -1,10 +1,10 @@
 <?php
 
-namespace Tests\Mollie\Api\Resources;
+namespace Tests\Mollie2\Api\Resources;
 
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Resources\Settlement;
-use Mollie\Api\Types\SettlementStatus;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Resources\Settlement;
+use Mollie2\Api\Types\SettlementStatus;
 
 class SettlementTest extends \PHPUnit\Framework\TestCase
 {

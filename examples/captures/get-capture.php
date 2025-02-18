@@ -22,6 +22,6 @@ try {
     $amount = $capture->amount->currency . ' ' . $capture->amount->value;
 
     echo 'Captured ' . $amount;
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "API call failed: " . htmlspecialchars($e->getMessage());
 }

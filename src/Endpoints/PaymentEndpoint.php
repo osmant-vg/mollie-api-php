@@ -1,13 +1,13 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\LazyCollection;
-use Mollie\Api\Resources\Payment;
-use Mollie\Api\Resources\PaymentCollection;
-use Mollie\Api\Resources\Refund;
-use Mollie\Api\Resources\ResourceFactory;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\Payment;
+use Mollie2\Api\Resources\PaymentCollection;
+use Mollie2\Api\Resources\Refund;
+use Mollie2\Api\Resources\ResourceFactory;
 
 class PaymentEndpoint extends CollectionEndpointAbstract
 {

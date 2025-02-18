@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
 class BalanceTransaction extends BaseResource
 {

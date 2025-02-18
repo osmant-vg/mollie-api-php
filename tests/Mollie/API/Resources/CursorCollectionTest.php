@@ -2,9 +2,9 @@
 
 namespace Tests\Mollie\API\Resources;
 
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Resources\LazyCollection;
-use Mollie\Api\Resources\OrderCollection;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\OrderCollection;
 use PHPUnit\Framework\TestCase;
 use stdClass;
 

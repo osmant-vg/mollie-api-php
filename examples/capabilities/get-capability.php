@@ -18,6 +18,6 @@ try {
     $capability = $mollie->capabilities->get("payments");
 
     echo $capability->name;
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "API call failed: " . htmlspecialchars($e->getMessage());
 }

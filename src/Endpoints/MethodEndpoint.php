@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\Method;
-use Mollie\Api\Resources\MethodCollection;
-use Mollie\Api\Resources\ResourceFactory;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\Method;
+use Mollie2\Api\Resources\MethodCollection;
+use Mollie2\Api\Resources\ResourceFactory;
 
 class MethodEndpoint extends CollectionEndpointAbstract
 {
@@ -25,7 +25,7 @@ class MethodEndpoint extends CollectionEndpointAbstract
      * @deprecated Use allActive() instead
      * @param array $parameters
      *
-     * @return \Mollie\Api\Resources\BaseCollection|\Mollie\Api\Resources\MethodCollection
+     * @return \Mollie2\Api\Resources\BaseCollection|\Mollie2\Api\Resources\MethodCollection
      * @throws ApiException
      */
     public function all(array $parameters = [])
@@ -39,7 +39,7 @@ class MethodEndpoint extends CollectionEndpointAbstract
      *
      * @param array $parameters
      *
-     * @return \Mollie\Api\Resources\BaseCollection|\Mollie\Api\Resources\MethodCollection
+     * @return \Mollie2\Api\Resources\BaseCollection|\Mollie2\Api\Resources\MethodCollection
      * @throws ApiException
      */
     public function allActive(array $parameters = [])
@@ -52,8 +52,8 @@ class MethodEndpoint extends CollectionEndpointAbstract
      * results are not paginated. Make sure to include the profileId parameter if using an OAuth Access Token.
      *
      * @param array $parameters Query string parameters.
-     * @return \Mollie\Api\Resources\BaseCollection|\Mollie\Api\Resources\MethodCollection
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\BaseCollection|\Mollie2\Api\Resources\MethodCollection
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function allAvailable(array $parameters = [])
     {
@@ -89,7 +89,7 @@ class MethodEndpoint extends CollectionEndpointAbstract
      *
      * @param string $methodId
      * @param array $parameters
-     * @return \Mollie\Api\Resources\Method
+     * @return \Mollie2\Api\Resources\Method
      * @throws ApiException
      */
     public function get($methodId, array $parameters = [])

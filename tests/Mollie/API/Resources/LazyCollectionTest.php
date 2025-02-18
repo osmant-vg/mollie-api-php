@@ -2,7 +2,7 @@
 
 namespace Tests\Mollie\API\Resources;
 
-use Mollie\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\LazyCollection;
 use PHPUnit\Framework\TestCase;
 
 class LazyCollectionTest extends TestCase

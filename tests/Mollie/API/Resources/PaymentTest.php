@@ -1,11 +1,11 @@
 <?php
 
-namespace Tests\Mollie\Api\Resources;
+namespace Tests\Mollie2\Api\Resources;
 
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Resources\Payment;
-use Mollie\Api\Types\PaymentStatus;
-use Mollie\Api\Types\SequenceType;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Resources\Payment;
+use Mollie2\Api\Types\PaymentStatus;
+use Mollie2\Api\Types\SequenceType;
 use stdClass;
 
 class PaymentTest extends \PHPUnit\Framework\TestCase

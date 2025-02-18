@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollie\Api\HttpAdapter;
+namespace Mollie2\Api\HttpAdapter;
 
 interface MollieHttpAdapterInterface
 {
@@ -12,7 +12,7 @@ interface MollieHttpAdapterInterface
      * @param string|array $headers
      * @param string $httpBody
      * @return \stdClass|null
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function send($httpMethod, $url, $headers, $httpBody);
 

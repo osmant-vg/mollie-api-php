@@ -1,8 +1,8 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
-use Mollie\Api\Types\RefundStatus;
+use Mollie2\Api\Types\RefundStatus;
 
 class Refund extends BaseResource
 {
@@ -171,7 +171,7 @@ class Refund extends BaseResource
      * Returns null if successful.
      *
      * @return null
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function cancel()
     {

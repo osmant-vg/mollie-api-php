@@ -26,6 +26,6 @@ try {
     ]);
 
     echo "<p>New capture created " . htmlspecialchars($capture->id) . " (" . htmlspecialchars($capture->description) . ").</p>";
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "API call failed: " . htmlspecialchars($e->getMessage());
 }

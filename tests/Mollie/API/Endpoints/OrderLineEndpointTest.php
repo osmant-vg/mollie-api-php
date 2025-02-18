@@ -1,13 +1,13 @@
 <?php
 
-namespace Tests\Mollie\Api\Endpoints;
+namespace Tests\Mollie2\Api\Endpoints;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Resources\Order;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Resources\Order;
 
 class OrderLineEndpointTest extends BaseEndpointTest
 {

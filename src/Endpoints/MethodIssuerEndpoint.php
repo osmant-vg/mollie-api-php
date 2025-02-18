@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\Issuer;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\Issuer;
 
 class MethodIssuerEndpoint extends EndpointAbstract
 {
@@ -20,7 +20,7 @@ class MethodIssuerEndpoint extends EndpointAbstract
      * @param string $methodId
      * @param string $issuerId
      * @return Issuer
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function enable(string $profileId, string $methodId, string $issuerId)
     {

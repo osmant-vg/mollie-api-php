@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Tests\Mollie\Api\Endpoints;
+namespace Tests\Mollie2\Api\Endpoints;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use Mollie\Api\Resources\Chargeback;
-use Mollie\Api\Resources\ChargebackCollection;
-use Mollie\Api\Resources\Settlement;
+use Mollie2\Api\Resources\Chargeback;
+use Mollie2\Api\Resources\ChargebackCollection;
+use Mollie2\Api\Resources\Settlement;
 
 class SettlementChargebackEndpointTest extends BaseEndpointTest
 {

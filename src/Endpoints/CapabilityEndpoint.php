@@ -1,10 +1,10 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\Capability;
-use Mollie\Api\Resources\CapabilityCollection;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\Capability;
+use Mollie2\Api\Resources\CapabilityCollection;
 
 class CapabilityEndpoint extends CollectionEndpointAbstract
 {
@@ -25,7 +25,7 @@ class CapabilityEndpoint extends CollectionEndpointAbstract
      *
      * @param string $name
      * @param array $parameters
-     * @return \Mollie\Api\Resources\Capability|\Mollie\Api\Resources\BaseResource
+     * @return \Mollie2\Api\Resources\Capability|\Mollie2\Api\Resources\BaseResource
      * @throws ApiException
      */
     public function get(string $name, array $parameters = [])

@@ -18,7 +18,7 @@ try {
      * Update the sales invoice
      */
     $updatedInvoice = $mollie->salesInvoices->update($invoiceId, [
-        'status' => \Mollie\Api\Types\SalesInvoiceStatus::PAID,
+        'status' => \Mollie2\Api\Types\SalesInvoiceStatus::PAID,
         'recipientIdentifier' => 'XXXXX',
         'lines' => [
             [
@@ -35,6 +35,6 @@ try {
     ]);
 
     echo "<p>Sales invoice updated with ID: " . htmlspecialchars($updatedInvoice->id) . "</p>";
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "API call failed: " . htmlspecialchars($e->getMessage());
 }

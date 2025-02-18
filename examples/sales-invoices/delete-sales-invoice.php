@@ -20,6 +20,6 @@ try {
     $mollie->salesInvoices->delete($invoiceId);
 
     echo "<p>Sales invoice deleted with ID: " . htmlspecialchars($invoiceId) . "</p>";
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "API call failed: " . htmlspecialchars($e->getMessage());
 }

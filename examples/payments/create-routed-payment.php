@@ -17,7 +17,7 @@ try {
      * See: https://docs.mollie.com/connect/getting-started
      */
 
-    $mollie = new \Mollie\Api\MollieApiClient();
+    $mollie = new \Mollie2\Api\MollieApiClient();
     $mollie->setAccessToken("access_dHar4XY7LxsDOtmnkVtjNVWXLSlXsM");
 
     /*
@@ -75,6 +75,6 @@ try {
      * This request should always be a GET, thus we enforce 303 http response code
      */
     header("Location: " . $payment->getCheckoutUrl(), true, 303);
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "API call failed: " . htmlspecialchars($e->getMessage());
 }

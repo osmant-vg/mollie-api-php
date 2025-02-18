@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollie\Api\HttpAdapter;
+namespace Mollie2\Api\HttpAdapter;
 
 use Composer\CaBundle\CaBundle;
 use GuzzleHttp\Client;
@@ -9,7 +9,7 @@ use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions as GuzzleRequestOptions;
-use Mollie\Api\Exceptions\ApiException;
+use Mollie2\Api\Exceptions\ApiException;
 use Psr\Http\Message\ResponseInterface;
 
 final class Guzzle6And7MollieHttpAdapter implements MollieHttpAdapterInterface
@@ -77,7 +77,7 @@ final class Guzzle6And7MollieHttpAdapter implements MollieHttpAdapterInterface
      * @param array $headers
      * @param string $httpBody
      * @return \stdClass|null
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function send($httpMethod, $url, $headers, $httpBody)
     {

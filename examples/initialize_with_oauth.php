@@ -15,5 +15,5 @@ require_once __DIR__ . "/functions.php";
  *
  * See: https://docs.mollie.com/oauth/overview
  */
-$mollie = new \Mollie\Api\MollieApiClient();
+$mollie = new \Mollie2\Api\MollieApiClient();
 $mollie->setAccessToken("access_Wwvu7egPcJLLJ9Kb7J632x8wJ2zMeJ");

@@ -1,13 +1,13 @@
 <?php
 
-namespace Mollie\Api\HttpAdapter;
+namespace Mollie2\Api\HttpAdapter;
 
 interface MollieHttpAdapterPickerInterface
 {
     /**
-     * @param \GuzzleHttp\ClientInterface|\Mollie\Api\HttpAdapter\MollieHttpAdapterInterface $httpClient
+     * @param \GuzzleHttp\ClientInterface|\Mollie2\Api\HttpAdapter\MollieHttpAdapterInterface $httpClient
      *
-     * @return \Mollie\Api\HttpAdapter\MollieHttpAdapterInterface
+     * @return \Mollie2\Api\HttpAdapter\MollieHttpAdapterInterface
      */
     public function pickHttpAdapter($httpClient);
 }

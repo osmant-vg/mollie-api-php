@@ -1,10 +1,10 @@
 <?php
 
-namespace Tests\Mollie\Api\Resources;
+namespace Tests\Mollie2\Api\Resources;
 
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Resources\Payment;
-use Mollie\Api\Resources\ResourceFactory;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Resources\Payment;
+use Mollie2\Api\Resources\ResourceFactory;
 
 class ResourceFactoryTest extends \PHPUnit\Framework\TestCase
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\Customer;
-use Mollie\Api\Resources\LazyCollection;
-use Mollie\Api\Resources\ResourceFactory;
-use Mollie\Api\Resources\Subscription;
-use Mollie\Api\Resources\SubscriptionCollection;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\Customer;
+use Mollie2\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\ResourceFactory;
+use Mollie2\Api\Resources\Subscription;
+use Mollie2\Api\Resources\SubscriptionCollection;
 
 class SubscriptionEndpoint extends CollectionEndpointAbstract
 {

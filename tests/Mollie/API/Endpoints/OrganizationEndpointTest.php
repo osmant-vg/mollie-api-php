@@ -1,10 +1,10 @@
 <?php
 
-namespace Tests\Mollie\Api\Endpoints;
+namespace Tests\Mollie2\Api\Endpoints;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use Mollie\Api\Resources\Organization;
+use Mollie2\Api\Resources\Organization;
 use Tests\Mollie\TestHelpers\LinkObjectTestHelpers;
 
 class OrganizationEndpointTest extends BaseEndpointTest

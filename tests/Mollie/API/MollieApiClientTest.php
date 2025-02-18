@@ -1,17 +1,17 @@
 <?php
 
-namespace Tests\Mollie\Api;
+namespace Tests\Mollie2\Api;
 
 use Eloquent\Liberator\Liberator;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Psr7\Response;
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Exceptions\HttpAdapterDoesNotSupportDebuggingException;
-use Mollie\Api\HttpAdapter\CurlMollieHttpAdapter;
-use Mollie\Api\HttpAdapter\Guzzle6And7MollieHttpAdapter;
-use Mollie\Api\Idempotency\FakeIdempotencyKeyGenerator;
-use Mollie\Api\MollieApiClient;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Exceptions\HttpAdapterDoesNotSupportDebuggingException;
+use Mollie2\Api\HttpAdapter\CurlMollieHttpAdapter;
+use Mollie2\Api\HttpAdapter\Guzzle6And7MollieHttpAdapter;
+use Mollie2\Api\Idempotency\FakeIdempotencyKeyGenerator;
+use Mollie2\Api\MollieApiClient;
 use Tests\Mollie\TestHelpers\FakeHttpAdapter;
 
 class MollieApiClientTest extends \PHPUnit\Framework\TestCase
@@ -214,8 +214,8 @@ class MollieApiClientTest extends \PHPUnit\Framework\TestCase
      * In this case it has to be skipped.
      *
      * @throws ApiException
-     * @throws \Mollie\Api\Exceptions\IncompatiblePlatform
-     * @throws \Mollie\Api\Exceptions\UnrecognizedClientException
+     * @throws \Mollie2\Api\Exceptions\IncompatiblePlatform
+     * @throws \Mollie2\Api\Exceptions\UnrecognizedClientException
      */
     public function testNoContentTypeWithoutProvidedBody()
     {
@@ -301,9 +301,9 @@ class MollieApiClientTest extends \PHPUnit\Framework\TestCase
     /**
      * @param $httpMethod
      * @return void
-     * @throws \Mollie\Api\Exceptions\ApiException
-     * @throws \Mollie\Api\Exceptions\IncompatiblePlatform
-     * @throws \Mollie\Api\Exceptions\UnrecognizedClientException
+     * @throws \Mollie2\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\IncompatiblePlatform
+     * @throws \Mollie2\Api\Exceptions\UnrecognizedClientException
      */
     private function assertIdempotencyKeyIsUsedForMethod($httpMethod)
     {

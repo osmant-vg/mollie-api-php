@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Resources\Balance;
-use Mollie\Api\Resources\BalanceTransaction;
-use Mollie\Api\Resources\BalanceTransactionCollection;
-use Mollie\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\Balance;
+use Mollie2\Api\Resources\BalanceTransaction;
+use Mollie2\Api\Resources\BalanceTransactionCollection;
+use Mollie2\Api\Resources\LazyCollection;
 
 class BalanceTransactionEndpoint extends CollectionEndpointAbstract
 {
@@ -42,9 +42,9 @@ class BalanceTransactionEndpoint extends CollectionEndpointAbstract
      *
      * @param Balance $balance
      * @param array $parameters
-     * @return BalanceTransactionCollection|\Mollie\Api\Resources\BaseCollection
+     * @return BalanceTransactionCollection|\Mollie2\Api\Resources\BaseCollection
      *
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function listFor(Balance $balance, array $parameters = [])
     {
@@ -70,9 +70,9 @@ class BalanceTransactionEndpoint extends CollectionEndpointAbstract
      *
      * @param string $balanceId
      * @param array $parameters
-     * @return BalanceTransactionCollection|\Mollie\Api\Resources\BaseCollection
+     * @return BalanceTransactionCollection|\Mollie2\Api\Resources\BaseCollection
      *
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function listForId(string $balanceId, array $parameters = [])
     {
@@ -101,9 +101,9 @@ class BalanceTransactionEndpoint extends CollectionEndpointAbstract
      * List the transactions for the primary Balance.
      *
      * @param array $parameters
-     * @return BalanceTransactionCollection|\Mollie\Api\Resources\BaseCollection
+     * @return BalanceTransactionCollection|\Mollie2\Api\Resources\BaseCollection
      *
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function listForPrimary(array $parameters = [])
     {

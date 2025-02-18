@@ -1,9 +1,9 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Types\SubscriptionStatus;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Types\SubscriptionStatus;
 
 class Subscription extends BaseResource
 {
@@ -111,7 +111,7 @@ class Subscription extends BaseResource
 
     /**
      * @return Subscription
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function update()
     {
@@ -185,7 +185,7 @@ class Subscription extends BaseResource
      * Cancels this subscription
      *
      * @return Subscription
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function cancel()
     {
@@ -212,8 +212,8 @@ class Subscription extends BaseResource
     /**
      * Get subscription payments
      *
-     * @return \Mollie\Api\Resources\PaymentCollection
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\PaymentCollection
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function payments()
     {

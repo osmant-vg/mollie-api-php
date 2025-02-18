@@ -1,14 +1,14 @@
 <?php
 
-namespace Tests\Mollie\Api\Endpoints;
+namespace Tests\Mollie2\Api\Endpoints;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use Mollie\Api\Resources\Customer;
-use Mollie\Api\Resources\Mandate;
-use Mollie\Api\Resources\MandateCollection;
-use Mollie\Api\Types\MandateMethod;
-use Mollie\Api\Types\MandateStatus;
+use Mollie2\Api\Resources\Customer;
+use Mollie2\Api\Resources\Mandate;
+use Mollie2\Api\Resources\MandateCollection;
+use Mollie2\Api\Types\MandateMethod;
+use Mollie2\Api\Types\MandateStatus;
 
 class MandateEndpointTest extends BaseEndpointTest
 {

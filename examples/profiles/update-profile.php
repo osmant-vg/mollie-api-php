@@ -25,6 +25,6 @@ try {
     $profile->businessCategory = "MARKETPLACES";
     $profile->update();
     echo "<p>Profile updated: " . htmlspecialchars($profile->name) . "</p>";
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "<p>API call failed: " . htmlspecialchars($e->getMessage()) . "</p>";
 }

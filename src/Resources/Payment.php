@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Types\PaymentStatus;
-use Mollie\Api\Types\SequenceType;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Types\PaymentStatus;
+use Mollie2\Api\Types\SequenceType;
 
 class Payment extends BaseResource
 {
@@ -728,7 +728,7 @@ class Payment extends BaseResource
      *
      * @param array $data
      *
-     * @return \Mollie\Api\Resources\Refund
+     * @return \Mollie2\Api\Resources\Refund
      * @throws ApiException
      */
     public function refund($data)
@@ -737,8 +737,8 @@ class Payment extends BaseResource
     }
 
     /**
-     * @return \Mollie\Api\Resources\Payment
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\Payment
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function update()
     {

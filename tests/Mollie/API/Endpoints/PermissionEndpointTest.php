@@ -1,11 +1,11 @@
 <?php
 
-namespace Tests\Mollie\Api\Endpoints;
+namespace Tests\Mollie2\Api\Endpoints;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use Mollie\Api\Resources\Permission;
-use Mollie\Api\Resources\PermissionCollection;
+use Mollie2\Api\Resources\Permission;
+use Mollie2\Api\Resources\PermissionCollection;
 use Tests\Mollie\TestHelpers\LinkObjectTestHelpers;
 
 class PermissionEndpointTest extends BaseEndpointTest

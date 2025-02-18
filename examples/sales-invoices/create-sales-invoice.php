@@ -1,7 +1,7 @@
 <?php
 
-use Mollie\Api\Types\PaymentTerm;
-use Mollie\Api\Types\SalesInvoiceStatus;
+use Mollie2\Api\Types\PaymentTerm;
+use Mollie2\Api\Types\SalesInvoiceStatus;
 
 /*
  * Create a sales invoice using the Mollie API.
@@ -46,6 +46,6 @@ try {
     ]);
 
     echo "<p>New sales invoice created with ID: " . htmlspecialchars($salesInvoice->id) . "</p>";
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "API call failed: " . htmlspecialchars($e->getMessage());
 }

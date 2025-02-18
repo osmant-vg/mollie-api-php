@@ -1,10 +1,10 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Resources\Order;
-use Mollie\Api\Resources\Refund;
-use Mollie\Api\Resources\RefundCollection;
+use Mollie2\Api\Resources\Order;
+use Mollie2\Api\Resources\Refund;
+use Mollie2\Api\Resources\RefundCollection;
 
 class OrderRefundEndpoint extends CollectionEndpointAbstract
 {
@@ -42,7 +42,7 @@ class OrderRefundEndpoint extends CollectionEndpointAbstract
      * @param array $filters
      *
      * @return Refund
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function createFor(Order $order, array $data, array $filters = [])
     {
@@ -57,8 +57,8 @@ class OrderRefundEndpoint extends CollectionEndpointAbstract
      * @param array $data
      * @param array $filters
      *
-     * @return \Mollie\Api\Resources\Refund
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\Refund
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function createForId($orderId, array $data, array $filters = [])
     {
@@ -71,7 +71,7 @@ class OrderRefundEndpoint extends CollectionEndpointAbstract
      * @param $orderId
      * @param array $parameters
      * @return RefundCollection
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function pageForId($orderId, array $parameters = [])
     {
@@ -81,10 +81,10 @@ class OrderRefundEndpoint extends CollectionEndpointAbstract
     }
 
     /**
-     * @param \Mollie\Api\Resources\Order $order
+     * @param \Mollie2\Api\Resources\Order $order
      * @param array $parameters
-     * @return \Mollie\Api\Resources\RefundCollection
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\RefundCollection
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function pageFor(Order $order, array $parameters = [])
     {

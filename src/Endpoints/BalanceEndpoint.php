@@ -1,12 +1,12 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\Balance;
-use Mollie\Api\Resources\BalanceCollection;
-use Mollie\Api\Resources\BaseCollection;
-use Mollie\Api\Resources\LazyCollection;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\Balance;
+use Mollie2\Api\Resources\BalanceCollection;
+use Mollie2\Api\Resources\BaseCollection;
+use Mollie2\Api\Resources\LazyCollection;
 
 class BalanceEndpoint extends CollectionEndpointAbstract
 {
@@ -40,7 +40,7 @@ class BalanceEndpoint extends CollectionEndpointAbstract
      *
      * @param string $balanceId
      * @param array $parameters
-     * @return \Mollie\Api\Resources\Balance|\Mollie\Api\Resources\BaseResource
+     * @return \Mollie2\Api\Resources\Balance|\Mollie2\Api\Resources\BaseResource
      * @throws ApiException
      */
     public function get(string $balanceId, array $parameters = [])
@@ -58,7 +58,7 @@ class BalanceEndpoint extends CollectionEndpointAbstract
      * Will throw an ApiException if the balance id is invalid or the resource cannot be found.
      *
      * @param array $parameters
-     * @return \Mollie\Api\Resources\Balance|\Mollie\Api\Resources\BaseResource
+     * @return \Mollie2\Api\Resources\Balance|\Mollie2\Api\Resources\BaseResource
      * @throws ApiException
      */
     public function primary(array $parameters = [])
@@ -74,7 +74,7 @@ class BalanceEndpoint extends CollectionEndpointAbstract
      * @param array $parameters
      *
      * @return BaseCollection|BalanceCollection
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function page(?string $from = null, ?int $limit = null, array $parameters = [])
     {

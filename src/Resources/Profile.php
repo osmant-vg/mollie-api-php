@@ -1,10 +1,10 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Types\ProfileStatus;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Types\ProfileStatus;
 
 class Profile extends BaseResource
 {
@@ -104,7 +104,7 @@ class Profile extends BaseResource
     }
 
     /**
-     * @return \Mollie\Api\Resources\Profile
+     * @return \Mollie2\Api\Resources\Profile
      * @throws ApiException
      */
     public function update()

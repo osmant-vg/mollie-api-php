@@ -1,10 +1,10 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\Permission;
-use Mollie\Api\Resources\PermissionCollection;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\Permission;
+use Mollie2\Api\Resources\PermissionCollection;
 
 class PermissionEndpoint extends CollectionEndpointAbstract
 {

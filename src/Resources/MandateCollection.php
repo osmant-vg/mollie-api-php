@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
 class MandateCollection extends CursorCollection
 {
@@ -22,7 +22,7 @@ class MandateCollection extends CursorCollection
 
     /**
      * @param string $status
-     * @return array|\Mollie\Api\Resources\MandateCollection
+     * @return array|\Mollie2\Api\Resources\MandateCollection
      */
     public function whereStatus($status)
     {

@@ -22,6 +22,6 @@ try {
         echo "<li>" . htmlspecialchars($mandate->id) . " - " . htmlspecialchars($mandate->method) . ": " . htmlspecialchars($mandate->status) . "</li>";
     }
     echo "</ul>";
-} catch (\Mollie\Api\Exceptions\ApiException $e) {
+} catch (\Mollie2\Api\Exceptions\ApiException $e) {
     echo "API call failed: " . htmlspecialchars($e->getMessage());
 }

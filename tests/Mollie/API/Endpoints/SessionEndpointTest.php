@@ -1,12 +1,12 @@
 <?php
 
-namespace Tests\Mollie\Api\Endpoints;
+namespace Tests\Mollie2\Api\Endpoints;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use Mollie\Api\Resources\Session;
-use Mollie\Api\Resources\SessionCollection;
-use Mollie\Api\Types\SessionStatus;
+use Mollie2\Api\Resources\Session;
+use Mollie2\Api\Resources\SessionCollection;
+use Mollie2\Api\Types\SessionStatus;
 use Tests\Mollie\TestHelpers\AmountObjectTestHelpers;
 use Tests\Mollie\TestHelpers\LinkObjectTestHelpers;
 

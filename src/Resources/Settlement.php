@@ -1,9 +1,9 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Types\SettlementStatus;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Types\SettlementStatus;
 
 class Settlement extends BaseResource
 {
@@ -116,7 +116,7 @@ class Settlement extends BaseResource
      * @param int|null $limit
      * @param array $parameters
      * @return PaymentCollection
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function payments(?int $limit = null, array $parameters = []): PaymentCollection
     {

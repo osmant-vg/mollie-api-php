@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Resources\LazyCollection;
-use Mollie\Api\Resources\Payment;
-use Mollie\Api\Resources\PaymentCollection;
-use Mollie\Api\Resources\PaymentLink;
+use Mollie2\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\Payment;
+use Mollie2\Api\Resources\PaymentCollection;
+use Mollie2\Api\Resources\PaymentLink;
 
 class PaymentLinkPaymentEndpoint extends CollectionEndpointAbstract
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\BaseResource;
-use Mollie\Api\Resources\Onboarding;
-use Mollie\Api\Resources\ResourceFactory;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\BaseResource;
+use Mollie2\Api\Resources\Onboarding;
+use Mollie2\Api\Resources\ResourceFactory;
 
 class OnboardingEndpoint extends EndpointAbstract
 {
@@ -59,7 +59,7 @@ class OnboardingEndpoint extends EndpointAbstract
      * @param array $filters
      *
      * @return mixed
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     protected function rest_read($id, array $filters)
     {
@@ -76,7 +76,7 @@ class OnboardingEndpoint extends EndpointAbstract
      * @param array $filters
      *
      * @return mixed
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     protected function rest_create(array $body, array $filters)
     {

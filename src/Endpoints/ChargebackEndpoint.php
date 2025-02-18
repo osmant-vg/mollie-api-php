@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\Chargeback;
-use Mollie\Api\Resources\ChargebackCollection;
-use Mollie\Api\Resources\LazyCollection;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\Chargeback;
+use Mollie2\Api\Resources\ChargebackCollection;
+use Mollie2\Api\Resources\LazyCollection;
 
 class ChargebackEndpoint extends CollectionEndpointAbstract
 {

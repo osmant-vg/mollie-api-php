@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollie\Api\HttpAdapter;
+namespace Mollie2\Api\HttpAdapter;
 
 use Composer\CaBundle\CaBundle;
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Exceptions\CurlConnectTimeoutException;
-use Mollie\Api\MollieApiClient;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Exceptions\CurlConnectTimeoutException;
+use Mollie2\Api\MollieApiClient;
 
 final class CurlMollieHttpAdapter implements MollieHttpAdapterInterface
 {
@@ -40,8 +40,8 @@ final class CurlMollieHttpAdapter implements MollieHttpAdapterInterface
      * @param array $headers
      * @param string $httpBody
      * @return \stdClass|void|null
-     * @throws \Mollie\Api\Exceptions\ApiException
-     * @throws \Mollie\Api\Exceptions\CurlConnectTimeoutException
+     * @throws \Mollie2\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\CurlConnectTimeoutException
      */
     public function send($httpMethod, $url, $headers, $httpBody)
     {
@@ -66,7 +66,7 @@ final class CurlMollieHttpAdapter implements MollieHttpAdapterInterface
      * @param array $headers
      * @param string $httpBody
      * @return \stdClass|void|null
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     protected function attemptRequest($httpMethod, $url, $headers, $httpBody)
     {
@@ -180,7 +180,7 @@ final class CurlMollieHttpAdapter implements MollieHttpAdapterInterface
      * @param int $statusCode
      * @param string $httpBody
      * @return \stdClass|null
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     protected function parseResponseBody($response, $statusCode, $httpBody)
     {

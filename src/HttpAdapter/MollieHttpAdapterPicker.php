@@ -1,16 +1,16 @@
 <?php
 
-namespace Mollie\Api\HttpAdapter;
+namespace Mollie2\Api\HttpAdapter;
 
-use Mollie\Api\Exceptions\UnrecognizedClientException;
+use Mollie2\Api\Exceptions\UnrecognizedClientException;
 
 class MollieHttpAdapterPicker implements MollieHttpAdapterPickerInterface
 {
     /**
-     * @param \GuzzleHttp\ClientInterface|\Mollie\Api\HttpAdapter\MollieHttpAdapterInterface|null|\stdClass $httpClient
+     * @param \GuzzleHttp\ClientInterface|\Mollie2\Api\HttpAdapter\MollieHttpAdapterInterface|null|\stdClass $httpClient
      *
-     * @return \Mollie\Api\HttpAdapter\MollieHttpAdapterInterface
-     * @throws \Mollie\Api\Exceptions\UnrecognizedClientException
+     * @return \Mollie2\Api\HttpAdapter\MollieHttpAdapterInterface
+     * @throws \Mollie2\Api\Exceptions\UnrecognizedClientException
      */
     public function pickHttpAdapter($httpClient)
     {

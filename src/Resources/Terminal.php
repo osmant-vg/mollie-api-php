@@ -1,8 +1,8 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
-use Mollie\Api\Types\TerminalStatus;
+use Mollie2\Api\Types\TerminalStatus;
 
 class Terminal extends BaseResource
 {

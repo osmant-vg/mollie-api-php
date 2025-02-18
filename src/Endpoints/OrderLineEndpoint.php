@@ -1,12 +1,12 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\Order;
-use Mollie\Api\Resources\OrderLine;
-use Mollie\Api\Resources\OrderLineCollection;
-use Mollie\Api\Resources\ResourceFactory;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\Order;
+use Mollie2\Api\Resources\OrderLine;
+use Mollie2\Api\Resources\OrderLineCollection;
+use Mollie2\Api\Resources\ResourceFactory;
 
 class OrderLineEndpoint extends CollectionEndpointAbstract
 {
@@ -52,8 +52,8 @@ class OrderLineEndpoint extends CollectionEndpointAbstract
      *
      * @param array $data
      *
-     * @return \Mollie\Api\Resources\BaseResource|null
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\BaseResource|null
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function update($orderId, $orderlineId, array $data = [])
     {
@@ -70,8 +70,8 @@ class OrderLineEndpoint extends CollectionEndpointAbstract
      * @param string $orderId
      * @param array $operations
      * @param array $parameters
-     * @return Order|\Mollie\Api\Resources\BaseResource
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return Order|\Mollie2\Api\Resources\BaseResource
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function updateMultiple(string $orderId, array $operations, array $parameters = [])
     {

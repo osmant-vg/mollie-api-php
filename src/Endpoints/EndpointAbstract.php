@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Resources\BaseResource;
-use Mollie\Api\Resources\ResourceFactory;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Resources\BaseResource;
+use Mollie2\Api\Resources\ResourceFactory;
 
 abstract class EndpointAbstract
 {

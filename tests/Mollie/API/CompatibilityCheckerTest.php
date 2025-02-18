@@ -1,7 +1,7 @@
 <?php
-namespace Tests\Mollie\Api;
+namespace Tests\Mollie2\Api;
 
-use \Mollie\Api\CompatibilityChecker;
+use \Mollie2\Api\CompatibilityChecker;
 
 class CompatibilityCheckerTest extends \PHPUnit\Framework\TestCase
 {
@@ -24,7 +24,7 @@ class CompatibilityCheckerTest extends \PHPUnit\Framework\TestCase
 
     public function testCheckCompatibilityThrowsExceptionOnPhpVersion()
     {
-        $this->expectException(\Mollie\Api\Exceptions\IncompatiblePlatform::class);
+        $this->expectException(\Mollie2\Api\Exceptions\IncompatiblePlatform::class);
         $this->checker->expects($this->once())
             ->method("satisfiesPhpVersion")
             ->will($this->returnValue(false)); // Fail
@@ -37,7 +37,7 @@ class CompatibilityCheckerTest extends \PHPUnit\Framework\TestCase
 
     public function testCheckCompatibilityThrowsExceptionOnJsonExtension()
     {
-        $this->expectException(\Mollie\Api\Exceptions\IncompatiblePlatform::class);
+        $this->expectException(\Mollie2\Api\Exceptions\IncompatiblePlatform::class);
         $this->checker->expects($this->once())
             ->method("satisfiesPhpVersion")
             ->will($this->returnValue(true));

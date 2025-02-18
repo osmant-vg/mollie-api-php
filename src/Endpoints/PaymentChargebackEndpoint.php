@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Resources\Chargeback;
-use Mollie\Api\Resources\ChargebackCollection;
-use Mollie\Api\Resources\LazyCollection;
-use Mollie\Api\Resources\Payment;
+use Mollie2\Api\Resources\Chargeback;
+use Mollie2\Api\Resources\ChargebackCollection;
+use Mollie2\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\Payment;
 
 class PaymentChargebackEndpoint extends CollectionEndpointAbstract
 {
@@ -40,7 +40,7 @@ class PaymentChargebackEndpoint extends CollectionEndpointAbstract
      * @param array $parameters
      *
      * @return Chargeback
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function getFor(Payment $payment, $chargebackId, array $parameters = [])
     {
@@ -53,7 +53,7 @@ class PaymentChargebackEndpoint extends CollectionEndpointAbstract
      * @param array $parameters
      *
      * @return Chargeback
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function getForId($paymentId, $chargebackId, array $parameters = [])
     {
@@ -67,7 +67,7 @@ class PaymentChargebackEndpoint extends CollectionEndpointAbstract
      * @param array $parameters
      *
      * @return Chargeback
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function listFor(Payment $payment, array $parameters = [])
     {
@@ -94,8 +94,8 @@ class PaymentChargebackEndpoint extends CollectionEndpointAbstract
      * @param string $paymentId
      * @param array $parameters
      *
-     * @return \Mollie\Api\Resources\BaseCollection|\Mollie\Api\Resources\Chargeback
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\BaseCollection|\Mollie2\Api\Resources\Chargeback
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function listForId($paymentId, array $parameters = [])
     {

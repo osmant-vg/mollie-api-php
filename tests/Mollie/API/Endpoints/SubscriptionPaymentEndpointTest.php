@@ -6,8 +6,8 @@ namespace Tests\Mollie\API\Endpoints;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use Mollie\Api\Resources\PaymentCollection;
-use Tests\Mollie\Api\Endpoints\BaseEndpointTest;
+use Mollie2\Api\Resources\PaymentCollection;
+use Tests\Mollie2\Api\Endpoints\BaseEndpointTest;
 
 class SubscriptionPaymentEndpointTest extends BaseEndpointTest
 {

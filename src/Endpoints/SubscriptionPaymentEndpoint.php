@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Resources\Payment;
-use Mollie\Api\Resources\PaymentCollection;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Resources\Payment;
+use Mollie2\Api\Resources\PaymentCollection;
 
 class SubscriptionPaymentEndpoint extends CollectionEndpointAbstract
 {
@@ -26,7 +26,7 @@ class SubscriptionPaymentEndpoint extends CollectionEndpointAbstract
      * @param array $parameters
      *
      * @return PaymentCollection
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function pageForIds(
         string $customerId,

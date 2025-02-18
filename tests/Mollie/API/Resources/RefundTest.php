@@ -1,11 +1,11 @@
 <?php
 
-namespace Tests\Mollie\Api\Resources;
+namespace Tests\Mollie2\Api\Resources;
 
-use Mollie\Api\Endpoints\PaymentRefundEndpoint;
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Resources\Refund;
-use Mollie\Api\Types\RefundStatus;
+use Mollie2\Api\Endpoints\PaymentRefundEndpoint;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Resources\Refund;
+use Mollie2\Api\Types\RefundStatus;
 
 class RefundTest extends \PHPUnit\Framework\TestCase
 {

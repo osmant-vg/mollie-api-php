@@ -1,10 +1,10 @@
 <?php
 
-namespace Tests\Mollie\Api\Resources;
+namespace Tests\Mollie2\Api\Resources;
 
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Resources\Profile;
-use Mollie\Api\Types\ProfileStatus;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Resources\Profile;
+use Mollie2\Api\Types\ProfileStatus;
 
 class ProfileTest extends \PHPUnit\Framework\TestCase
 {

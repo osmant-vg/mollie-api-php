@@ -1,9 +1,9 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Types\OrderStatus;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Types\OrderStatus;
 
 class Order extends BaseResource
 {
@@ -322,7 +322,7 @@ class Order extends BaseResource
      * be found.
      *
      * @return Order
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function cancel()
     {
@@ -337,7 +337,7 @@ class Order extends BaseResource
      *
      * @param  array $data
      * @return null
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function cancelLines(array $data)
     {
@@ -350,7 +350,7 @@ class Order extends BaseResource
      *
      * @param  array|null $data
      * @return null
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function cancelAllLines($data = [])
     {
@@ -471,7 +471,7 @@ class Order extends BaseResource
      * Retrieves all refunds associated with this order
      *
      * @return RefundCollection
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function refunds()
     {
@@ -481,8 +481,8 @@ class Order extends BaseResource
     /**
      * Saves the order's updated billingAddress and/or shippingAddress.
      *
-     * @return \Mollie\Api\Resources\Order
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\Order
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function update()
     {
@@ -505,8 +505,8 @@ class Order extends BaseResource
      *
      * @param array $data
      * @param array $filters
-     * @return \Mollie\Api\Resources\Payment
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\Payment
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function createPayment($data, $filters = [])
     {
@@ -517,7 +517,7 @@ class Order extends BaseResource
      * Retrieve the payments for this order.
      * Requires the order to be retrieved using the embed payments parameter.
      *
-     * @return null|\Mollie\Api\Resources\PaymentCollection
+     * @return null|\Mollie2\Api\Resources\PaymentCollection
      */
     public function payments()
     {

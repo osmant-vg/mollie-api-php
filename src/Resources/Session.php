@@ -1,8 +1,8 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
-use Mollie\Api\Types\SessionStatus;
+use Mollie2\Api\Types\SessionStatus;
 
 class Session extends BaseResource
 {
@@ -138,8 +138,8 @@ class Session extends BaseResource
     /**
      * Saves the session's updatable properties.
      *
-     * @return \Mollie\Api\Resources\Session
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\Session
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function update()
     {
@@ -157,7 +157,7 @@ class Session extends BaseResource
      * Cancels this session.
      *
      * @return Session
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function cancel()
     {

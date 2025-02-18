@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Resources\LazyCollection;
-use Mollie\Api\Resources\Refund;
-use Mollie\Api\Resources\RefundCollection;
+use Mollie2\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\Refund;
+use Mollie2\Api\Resources\RefundCollection;
 
 class SettlementRefundEndpoint extends CollectionEndpointAbstract
 {
@@ -37,7 +37,7 @@ class SettlementRefundEndpoint extends CollectionEndpointAbstract
      * @param array $parameters
      *
      * @return mixed
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function pageForId(string $settlementId, ?string $from = null, ?int $limit = null, array $parameters = [])
     {

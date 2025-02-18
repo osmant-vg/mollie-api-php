@@ -6,8 +6,8 @@ use Eloquent\Liberator\Liberator;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Psr7\Request;
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\HttpAdapter\Guzzle6And7MollieHttpAdapter;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\HttpAdapter\Guzzle6And7MollieHttpAdapter;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\RequestInterface;
 

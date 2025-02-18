@@ -1,8 +1,8 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
-use Mollie\Api\Types\SalesInvoiceStatus;
+use Mollie2\Api\Types\SalesInvoiceStatus;
 
 class SalesInvoice extends BaseResource
 {

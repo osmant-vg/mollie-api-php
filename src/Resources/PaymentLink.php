@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
 class PaymentLink extends BaseResource
 {
@@ -128,8 +128,8 @@ class PaymentLink extends BaseResource
     /**
      * Persist the current local Payment Link state to the Mollie API.
      *
-     * @return mixed|\Mollie\Api\Resources\BaseResource
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return mixed|\Mollie2\Api\Resources\BaseResource
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function update()
     {
@@ -146,8 +146,8 @@ class PaymentLink extends BaseResource
     /**
      * Archive this Payment Link.
      *
-     * @return \Mollie\Api\Resources\PaymentLink
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\PaymentLink
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function archive()
     {
@@ -164,7 +164,7 @@ class PaymentLink extends BaseResource
      * @param string|null $from
      * @param int|null $limit
      * @param array $filters
-     * @return mixed|\Mollie\Api\Resources\BaseCollection
+     * @return mixed|\Mollie2\Api\Resources\BaseCollection
      */
     public function payments(?string $from = null, ?int $limit = null, array $filters = [])
     {

@@ -2,16 +2,16 @@
 
 namespace Tests\Mollie\API\Resources;
 
-use Mollie\Api\MollieApiClient;
-use Mollie\Api\Resources\Mandate;
-use Mollie\Api\Resources\MandateCollection;
-use Mollie\Api\Types\MandateStatus;
+use Mollie2\Api\MollieApiClient;
+use Mollie2\Api\Resources\Mandate;
+use Mollie2\Api\Resources\MandateCollection;
+use Mollie2\Api\Types\MandateStatus;
 use PHPUnit\Framework\TestCase;
 
 class MandateCollectionTest extends TestCase
 {
     /**
-     * @var \Mollie\Api\MollieApiClient
+     * @var \Mollie2\Api\MollieApiClient
      */
     protected $client;
 
@@ -53,7 +53,7 @@ class MandateCollectionTest extends TestCase
 
     /**
      * @param string $status
-     * @return \Mollie\Api\Resources\Mandate
+     * @return \Mollie2\Api\Resources\Mandate
      */
     protected function getMandateWithStatus($status)
     {

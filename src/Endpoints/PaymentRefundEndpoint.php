@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollie\Api\Endpoints;
+namespace Mollie2\Api\Endpoints;
 
-use Mollie\Api\Resources\LazyCollection;
-use Mollie\Api\Resources\Payment;
-use Mollie\Api\Resources\Refund;
-use Mollie\Api\Resources\RefundCollection;
+use Mollie2\Api\Resources\LazyCollection;
+use Mollie2\Api\Resources\Payment;
+use Mollie2\Api\Resources\Refund;
+use Mollie2\Api\Resources\RefundCollection;
 
 class PaymentRefundEndpoint extends CollectionEndpointAbstract
 {
@@ -40,7 +40,7 @@ class PaymentRefundEndpoint extends CollectionEndpointAbstract
      * @param array $parameters
      *
      * @return Refund
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function getFor(Payment $payment, $refundId, array $parameters = [])
     {
@@ -52,8 +52,8 @@ class PaymentRefundEndpoint extends CollectionEndpointAbstract
      * @param string $refundId
      * @param array $parameters
      *
-     * @return \Mollie\Api\Resources\Refund
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\Refund
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function getForId($paymentId, $refundId, array $parameters = [])
     {
@@ -67,7 +67,7 @@ class PaymentRefundEndpoint extends CollectionEndpointAbstract
      * @param array $parameters
      *
      * @return Refund
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function listFor(Payment $payment, array $parameters = [])
     {
@@ -94,8 +94,8 @@ class PaymentRefundEndpoint extends CollectionEndpointAbstract
      * @param string $paymentId
      * @param array $parameters
      *
-     * @return \Mollie\Api\Resources\BaseCollection|\Mollie\Api\Resources\Refund
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\BaseCollection|\Mollie2\Api\Resources\Refund
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function listForId($paymentId, array $parameters = [])
     {
@@ -131,7 +131,7 @@ class PaymentRefundEndpoint extends CollectionEndpointAbstract
      * @param array $filters
      *
      * @return Refund
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function createFor(Payment $payment, array $data, array $filters = [])
     {
@@ -145,8 +145,8 @@ class PaymentRefundEndpoint extends CollectionEndpointAbstract
      * @param array $data
      * @param array $filters
      *
-     * @return \Mollie\Api\Resources\Refund
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @return \Mollie2\Api\Resources\Refund
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function createForId(string $paymentId, array $data, array $filters = [])
     {
@@ -156,12 +156,12 @@ class PaymentRefundEndpoint extends CollectionEndpointAbstract
     }
 
     /**
-     * @param \Mollie\Api\Resources\Payment $payment
+     * @param \Mollie2\Api\Resources\Payment $payment
      * @param string $refundId
      * @param array $parameters
      * @return null
      *
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function cancelForPayment(Payment $payment, string $refundId, array $parameters = [])
     {
@@ -176,7 +176,7 @@ class PaymentRefundEndpoint extends CollectionEndpointAbstract
      * @param array $parameters
      * @return null
      *
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     public function cancelForId(string $paymentId, string $refundId, array $parameters = [])
     {

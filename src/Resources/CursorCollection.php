@@ -1,9 +1,9 @@
 <?php
 
-namespace Mollie\Api\Resources;
+namespace Mollie2\Api\Resources;
 
 use Generator;
-use Mollie\Api\MollieApiClient;
+use Mollie2\Api\MollieApiClient;
 
 abstract class CursorCollection extends BaseCollection
 {
@@ -33,7 +33,7 @@ abstract class CursorCollection extends BaseCollection
      * Return the next set of resources when available
      *
      * @return CursorCollection|null
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     final public function next()
     {
@@ -56,7 +56,7 @@ abstract class CursorCollection extends BaseCollection
      * Return the previous set of resources when available
      *
      * @return CursorCollection|null
-     * @throws \Mollie\Api\Exceptions\ApiException
+     * @throws \Mollie2\Api\Exceptions\ApiException
      */
     final public function previous()
     {

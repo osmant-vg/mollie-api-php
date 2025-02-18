@@ -1,55 +1,55 @@
 <?php
 
-namespace Mollie\Api;
+namespace Mollie2\Api;
 
-use Mollie\Api\Endpoints\BalanceEndpoint;
-use Mollie\Api\Endpoints\BalanceReportEndpoint;
-use Mollie\Api\Endpoints\BalanceTransactionEndpoint;
-use Mollie\Api\Endpoints\CapabilityEndpoint;
-use Mollie\Api\Endpoints\ChargebackEndpoint;
-use Mollie\Api\Endpoints\ClientEndpoint;
-use Mollie\Api\Endpoints\ClientLinkEndpoint;
-use Mollie\Api\Endpoints\CustomerEndpoint;
-use Mollie\Api\Endpoints\CustomerPaymentsEndpoint;
-use Mollie\Api\Endpoints\InvoiceEndpoint;
-use Mollie\Api\Endpoints\MandateEndpoint;
-use Mollie\Api\Endpoints\MethodEndpoint;
-use Mollie\Api\Endpoints\MethodIssuerEndpoint;
-use Mollie\Api\Endpoints\OnboardingEndpoint;
-use Mollie\Api\Endpoints\OrderEndpoint;
-use Mollie\Api\Endpoints\OrderLineEndpoint;
-use Mollie\Api\Endpoints\OrderPaymentEndpoint;
-use Mollie\Api\Endpoints\OrderRefundEndpoint;
-use Mollie\Api\Endpoints\OrganizationEndpoint;
-use Mollie\Api\Endpoints\OrganizationPartnerEndpoint;
-use Mollie\Api\Endpoints\PaymentCaptureEndpoint;
-use Mollie\Api\Endpoints\PaymentChargebackEndpoint;
-use Mollie\Api\Endpoints\PaymentEndpoint;
-use Mollie\Api\Endpoints\PaymentLinkEndpoint;
-use Mollie\Api\Endpoints\PaymentLinkPaymentEndpoint;
-use Mollie\Api\Endpoints\PaymentRefundEndpoint;
-use Mollie\Api\Endpoints\PaymentRouteEndpoint;
-use Mollie\Api\Endpoints\PermissionEndpoint;
-use Mollie\Api\Endpoints\ProfileEndpoint;
-use Mollie\Api\Endpoints\ProfileMethodEndpoint;
-use Mollie\Api\Endpoints\RefundEndpoint;
-use Mollie\Api\Endpoints\SalesInvoiceEndpoint;
-use Mollie\Api\Endpoints\SessionEndpoint;
-use Mollie\Api\Endpoints\SettlementCaptureEndpoint;
-use Mollie\Api\Endpoints\SettlementChargebackEndpoint;
-use Mollie\Api\Endpoints\SettlementPaymentEndpoint;
-use Mollie\Api\Endpoints\SettlementRefundEndpoint;
-use Mollie\Api\Endpoints\SettlementsEndpoint;
-use Mollie\Api\Endpoints\ShipmentEndpoint;
-use Mollie\Api\Endpoints\SubscriptionEndpoint;
-use Mollie\Api\Endpoints\SubscriptionPaymentEndpoint;
-use Mollie\Api\Endpoints\TerminalEndpoint;
-use Mollie\Api\Endpoints\WalletEndpoint;
-use Mollie\Api\Exceptions\ApiException;
-use Mollie\Api\Exceptions\HttpAdapterDoesNotSupportDebuggingException;
-use Mollie\Api\Exceptions\IncompatiblePlatform;
-use Mollie\Api\HttpAdapter\MollieHttpAdapterPicker;
-use Mollie\Api\Idempotency\DefaultIdempotencyKeyGenerator;
+use Mollie2\Api\Endpoints\BalanceEndpoint;
+use Mollie2\Api\Endpoints\BalanceReportEndpoint;
+use Mollie2\Api\Endpoints\BalanceTransactionEndpoint;
+use Mollie2\Api\Endpoints\CapabilityEndpoint;
+use Mollie2\Api\Endpoints\ChargebackEndpoint;
+use Mollie2\Api\Endpoints\ClientEndpoint;
+use Mollie2\Api\Endpoints\ClientLinkEndpoint;
+use Mollie2\Api\Endpoints\CustomerEndpoint;
+use Mollie2\Api\Endpoints\CustomerPaymentsEndpoint;
+use Mollie2\Api\Endpoints\InvoiceEndpoint;
+use Mollie2\Api\Endpoints\MandateEndpoint;
+use Mollie2\Api\Endpoints\MethodEndpoint;
+use Mollie2\Api\Endpoints\MethodIssuerEndpoint;
+use Mollie2\Api\Endpoints\OnboardingEndpoint;
+use Mollie2\Api\Endpoints\OrderEndpoint;
+use Mollie2\Api\Endpoints\OrderLineEndpoint;
+use Mollie2\Api\Endpoints\OrderPaymentEndpoint;
+use Mollie2\Api\Endpoints\OrderRefundEndpoint;
+use Mollie2\Api\Endpoints\OrganizationEndpoint;
+use Mollie2\Api\Endpoints\OrganizationPartnerEndpoint;
+use Mollie2\Api\Endpoints\PaymentCaptureEndpoint;
+use Mollie2\Api\Endpoints\PaymentChargebackEndpoint;
+use Mollie2\Api\Endpoints\PaymentEndpoint;
+use Mollie2\Api\Endpoints\PaymentLinkEndpoint;
+use Mollie2\Api\Endpoints\PaymentLinkPaymentEndpoint;
+use Mollie2\Api\Endpoints\PaymentRefundEndpoint;
+use Mollie2\Api\Endpoints\PaymentRouteEndpoint;
+use Mollie2\Api\Endpoints\PermissionEndpoint;
+use Mollie2\Api\Endpoints\ProfileEndpoint;
+use Mollie2\Api\Endpoints\ProfileMethodEndpoint;
+use Mollie2\Api\Endpoints\RefundEndpoint;
+use Mollie2\Api\Endpoints\SalesInvoiceEndpoint;
+use Mollie2\Api\Endpoints\SessionEndpoint;
+use Mollie2\Api\Endpoints\SettlementCaptureEndpoint;
+use Mollie2\Api\Endpoints\SettlementChargebackEndpoint;
+use Mollie2\Api\Endpoints\SettlementPaymentEndpoint;
+use Mollie2\Api\Endpoints\SettlementRefundEndpoint;
+use Mollie2\Api\Endpoints\SettlementsEndpoint;
+use Mollie2\Api\Endpoints\ShipmentEndpoint;
+use Mollie2\Api\Endpoints\SubscriptionEndpoint;
+use Mollie2\Api\Endpoints\SubscriptionPaymentEndpoint;
+use Mollie2\Api\Endpoints\TerminalEndpoint;
+use Mollie2\Api\Endpoints\WalletEndpoint;
+use Mollie2\Api\Exceptions\ApiException;
+use Mollie2\Api\Exceptions\HttpAdapterDoesNotSupportDebuggingException;
+use Mollie2\Api\Exceptions\IncompatiblePlatform;
+use Mollie2\Api\HttpAdapter\MollieHttpAdapterPicker;
+use Mollie2\Api\Idempotency\DefaultIdempotencyKeyGenerator;
 
 class MollieApiClient
 {
@@ -77,7 +77,7 @@ class MollieApiClient
     public const HTTP_PATCH = "PATCH";
 
     /**
-     * @var \Mollie\Api\HttpAdapter\MollieHttpAdapterInterface
+     * @var \Mollie2\Api\HttpAdapter\MollieHttpAdapterInterface
      */
     protected $httpClient;
 
@@ -106,12 +106,12 @@ class MollieApiClient
     public $profileMethods;
 
     /**
-     * @var \Mollie\Api\Endpoints\MethodIssuerEndpoint
+     * @var \Mollie2\Api\Endpoints\MethodIssuerEndpoint
      */
     public $methodIssuers;
 
     /**
-     * @var \Mollie\Api\Endpoints\CapabilityEndpoint
+     * @var \Mollie2\Api\Endpoints\CapabilityEndpoint
      */
     public $capabilities;
 
@@ -146,28 +146,28 @@ class MollieApiClient
     /**
      * RESTful Settlement capture resource.
      *
-     * @var \Mollie\Api\Endpoints\SettlementCaptureEndpoint
+     * @var \Mollie2\Api\Endpoints\SettlementCaptureEndpoint
      */
     public $settlementCaptures;
 
     /**
      * RESTful Settlement chargeback resource.
      *
-     * @var \Mollie\Api\Endpoints\SettlementChargebackEndpoint
+     * @var \Mollie2\Api\Endpoints\SettlementChargebackEndpoint
      */
     public $settlementChargebacks;
 
     /**
      * RESTful Settlement payment resource.
      *
-     * @var \Mollie\Api\Endpoints\SettlementPaymentEndpoint
+     * @var \Mollie2\Api\Endpoints\SettlementPaymentEndpoint
      */
     public $settlementPayments;
 
     /**
      * RESTful Settlement refund resource.
      *
-     * @var \Mollie\Api\Endpoints\SettlementRefundEndpoint
+     * @var \Mollie2\Api\Endpoints\SettlementRefundEndpoint
      */
     public $settlementRefunds;
 
@@ -398,7 +398,7 @@ class MollieApiClient
     protected $idempotencyKey = null;
 
     /**
-     * @var \Mollie\Api\Idempotency\IdempotencyKeyGeneratorContract|null
+     * @var \Mollie2\Api\Idempotency\IdempotencyKeyGeneratorContract|null
      */
     protected $idempotencyKeyGenerator;
 
@@ -408,10 +408,10 @@ class MollieApiClient
     protected $versionStrings = [];
 
     /**
-     * @param \GuzzleHttp\ClientInterface|\Mollie\Api\HttpAdapter\MollieHttpAdapterInterface|null $httpClient
-     * @param \Mollie\Api\HttpAdapter\MollieHttpAdapterPickerInterface|null $httpAdapterPicker,
-     * @param \Mollie\Api\Idempotency\IdempotencyKeyGeneratorContract $idempotencyKeyGenerator,
-     * @throws \Mollie\Api\Exceptions\IncompatiblePlatform|\Mollie\Api\Exceptions\UnrecognizedClientException
+     * @param \GuzzleHttp\ClientInterface|\Mollie2\Api\HttpAdapter\MollieHttpAdapterInterface|null $httpClient
+     * @param \Mollie2\Api\HttpAdapter\MollieHttpAdapterPickerInterface|null $httpAdapterPicker,
+     * @param \Mollie2\Api\Idempotency\IdempotencyKeyGeneratorContract $idempotencyKeyGenerator,
+     * @throws \Mollie2\Api\Exceptions\IncompatiblePlatform|\Mollie2\Api\Exceptions\UnrecognizedClientException
      */
     public function __construct($httpClient = null, $httpAdapterPicker = null, $idempotencyKeyGenerator = null)
     {
@@ -485,7 +485,7 @@ class MollieApiClient
     }
 
     /**
-     * @param \Mollie\Api\Idempotency\IdempotencyKeyGeneratorContract $generator
+     * @param \Mollie2\Api\Idempotency\IdempotencyKeyGeneratorContract $generator
      * @return void
      */
     protected function initializeIdempotencyKeyGenerator($generator)
@@ -587,7 +587,7 @@ class MollieApiClient
      * Enable debugging mode. If debugging mode is enabled, the attempted request will be included in the ApiException.
      * By default, debugging is disabled to prevent leaking sensitive request data into exception logs.
      *
-     * @throws \Mollie\Api\Exceptions\HttpAdapterDoesNotSupportDebuggingException
+     * @throws \Mollie2\Api\Exceptions\HttpAdapterDoesNotSupportDebuggingException
      */
     public function enableDebugging()
     {
@@ -607,7 +607,7 @@ class MollieApiClient
      * Disable debugging mode. If debugging mode is enabled, the attempted request will be included in the ApiException.
      * By default, debugging is disabled to prevent leaking sensitive request data into exception logs.
      *
-     * @throws \Mollie\Api\Exceptions\HttpAdapterDoesNotSupportDebuggingException
+     * @throws \Mollie2\Api\Exceptions\HttpAdapterDoesNotSupportDebuggingException
      */
     public function disableDebugging()
     {
@@ -662,8 +662,8 @@ class MollieApiClient
     }
 
     /**
-     * @param \Mollie\Api\Idempotency\IdempotencyKeyGeneratorContract $generator
-     * @return \Mollie\Api\MollieApiClient
+     * @param \Mollie2\Api\Idempotency\IdempotencyKeyGeneratorContract $generator
+     * @return \Mollie2\Api\MollieApiClient
      */
     public function setIdempotencyKeyGenerator($generator)
     {
@@ -673,7 +673,7 @@ class MollieApiClient
     }
 
     /**
-     * @return \Mollie\Api\MollieApiClient
+     * @return \Mollie2\Api\MollieApiClient
      */
     public function clearIdempotencyKeyGenerator()
     {
